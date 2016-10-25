@@ -7,7 +7,7 @@
   <body>
     <header class="shop-header">
       <div class="nerds-logo">
-        <img alt="Nerds logo" src="http://placehold.it/150x100">
+        <a href="index.html"><img alt="Nerds logo" src="http://placehold.it/150x100"></a>
       </div>
       <div class="container">
         <nav class="main-navigation">
@@ -64,29 +64,54 @@
           <li><a class="sort-btn" href="#">Вверх</a></li>
         </ul>
       </div>
-      <article>
-        <img alt="Sedona" src="http://placehold.it/200x200">
-        <div class="sedona-price-box">
-          <h3>Sedona</h3>
+      <article class="sedona">
+        <a class="main-img" href="#"><img alt="Sedona" src="http://placehold.it/200x200"></a>
+        <div class="price-box">
+          <h3><a href="">Sedona</a></h3>
           Информационный сайт для туристов
           <a class="btn" href="#">9 900 руб.</a>
         </div>
       </article>
-      <div class="borodinsky">
+      <article class="borodinsky">
         <a class="main-img" href="#"><img alt="Барбершоп Бородинки" src="http://placehold.it/200x400"></a>
-      </div>
-      <div class="learn-to-fun">
-        <a class="main-img" href="#"><img alt="Сайт учебного заведения" src="http://placehold.it/200x400"></a>
-      </div>
-      <div class="pink">
+        <div class="price-box">
+          <h3><a href="#">Barbershop</a></h3>
+          Сайт солона кросоты. Для мужчин, да.
+          <a class="btn" href="#">9 900 руб.</a>
+        </div>
+      </article>
+      <article class="a-plus">
+        <a class="main-img" href="#"><img alt="A plus" src="http://placehold.it/200x400"></a>
+        <div class="price-box">
+          <h3><a href="#">A plus</a></h3>
+          Лендинг курсов повышения квалификации
+          <a class="btn" href="#">9 900 руб.</a>
+        </div>
+      </article>
+      <article class="pink">
         <a class="main-img" href="#"><img alt="Мобильные приложения PINK" src="http://placehold.it/200x400"></a>
-      </div>
-      <div class="mishka">
-        <a class="main-img" href="#"><img alt="Рукодельые принадлежности MISHKA" src="http://placehold.it/200x400"></a>
-      </div>
-      <div class="kvast">
+        <div class="price-box">
+          <h3><a href="#">Pink App</a></h3>
+          Продуктовый лендинг приложения для IOS и Android
+          <a class="btn" href="#">9 900 руб.</a>
+        </div>
+      </article>
+      <article class="mishka">
+        <a class="main-img" href="#"><img alt="Интернет-магазин MISHKA" src="http://placehold.it/200x400"></a>
+        <div class="price-box">
+          <h3><a href="#">Mishka</a></h3>
+          Интернет-магазин вязальных игрушек
+          <a class="btn" href="#">9 900 руб.</a>
+        </div>
+      </article>
+      <article class="kvast">
         <a class="main-img" href="#"><img alt="Самый крафтовый квас" src="http://placehold.it/200x400"></a>
-      </div>
+        <div class="price-box">
+          <h3><a href="#">Кваст</a></h3>
+          Промо-сайт производителя крафтового кваса
+          <a class="btn" href="#">9 900 руб.</a>
+        </div>
+      </article>
       <div class="pages-of-shop">
         <a class="btn">1</a>
         <a class="btn" href="#">2</a>
@@ -99,10 +124,11 @@
         <img alt="Карта" src="http://placehold.it/600x200">
         <div class="adress">
           <h4>Nёrds design studio</h4>
-          191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          <br>
-          тел. +7(812) 275-75-75
+          <p>191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8<br>
+             <br>
+             тел. +7(812) 275-75-75
+          </p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
       </div>
@@ -116,6 +142,15 @@
           <span class="social-header">Давайте дружить, это выгодно!</span>
             Скидка 10% для друзей из социальных сетей
         </div>
+        <form class="hiden-form" action="/echo" method="post">
+          <h2>Напишите нам</h2>
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+          <label for="mail-field">Ваш e-mail:</label>
+          <input type="text" name="mail" id="mail-field" placeholder="Для отправки ответа">
+          <label for="comment-field">Текст письма</label>
+          <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+        </form>
       </div>
     </footer>
   </body>
