@@ -19,3 +19,246 @@ h3 {
   font-weight: bold;
   color: #000000;
 }
+
+.container {
+  width: 1200px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-header {
+  padding-top: 50px;
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+}
+
+.nerds-logo {
+  float: left;
+  margin-right: 120px;
+  height: 65px;
+}
+
+.main-menu {
+  width: 560px;
+  float: left;
+}
+
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.basket {
+  width: 160px;
+  float: right;
+}
+
+.slide img {
+  float: right;
+  margin-right: 40px;
+}
+
+.slide-description {
+  width: 380px;
+  float: left;
+}
+
+.main-features {
+  /*Только для офромления сетки*/
+  min-height: 428px;
+}
+
+.feature {
+  width: 300px;
+}
+
+.feature a{
+  display: block;
+}
+
+.feature-1 {
+  float: left;
+  margin-right: 100px;
+}
+
+.feature-2 {
+  float: left;
+  margin-right: 100px;
+}
+
+.feature-3 {
+  float: left;
+}
+
+
+.main-about {
+  min-height: 528px;
+  border-top: 2px solid #eeeeee;
+}
+
+.main-about-left {
+  width: 660px;
+  float: left;
+}
+
+.main-about-right {
+  width: 360px;
+  float: right;
+  margin-top: 39px;
+  margin-right: 40px;
+}
+
+.portfolio {
+  min-height: 183px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.portfolio a {
+  width: 260px;
+  margin-top: 45px;
+  margin-right: 36px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.portfolio a:last-child {
+  margin-right: 0;
+}
+
+.portfolio a img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.btn-academy img {
+  margin-left: 31px;
+}
+
+.btn-borodinski img {
+  margin-left: 23px;
+}
+
+.btn-pink img {
+  margin-left: 35px;
+}
+
+.btn-mishka img {
+  margin-left: 44px;
+}
+
+.main-footer {
+  margin-top: 82px;
+}
+
+.map {
+  width: 1440px;
+  min-height: 416px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  background-image: url("../img/map-marker.jpg");
+  background-repeat: no-repeat;
+}
+
+.address {
+  margin-top: 54px;
+  float: left;
+  width: 318px;
+  min-height: 308px;
+  background-color: white;
+}
+
+.social {
+  width: 260px;
+  float: left;
+  min-height: 80px;
+}
+
+.friendship {
+  width: 600px;
+  margin-right: 180px;
+  float: right;
+}
+
+/*Далее только вторая страница catalog.html*/
+
+.catalog-header {
+  padding-top: 50px;
+  margin-bottom: 42px;
+  background-color: #eeeeee;
+}
+
+.catalog-header .nerds-logo {
+  margin-bottom: 41px;
+}
+
+.leader {
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leader h1 {
+  margin-bottom: 106px;
+}
+
+.action-form {
+  width: 260px;
+  margin-top: 20px;
+  float: left;
+  margin-right: 140px;
+}
+
+.main-filter {
+  width: 800px;
+  float: right;
+  margin-bottom: 77px;
+}
+
+.main-filter ul{
+  padding: 0;
+  padding-top: 0;
+}
+
+.main-filter li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cards {
+  width: 800px;
+  float: right;
+}
+
+article {
+  width: 360px;
+  display: inline-block;
+  font-size: 0;
+  margin-right: 37px;
+}
+
+article:nth-child(2n) {
+  margin-right: 0;
+}
+
+
+
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-form{
+  display: none;
+}
+.slide-1,
+.slide-2 {
+  display: none;
+}
+
+*{outline: 1px solid green;}
