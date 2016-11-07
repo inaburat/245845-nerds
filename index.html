@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
@@ -29,45 +30,35 @@
           <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
           <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
           <div class="slider-inner">
             <div class="slider-slides">
               <div class="slides slide-1">
                 <div class="slide-description">
-                  <b>Долго, дорого, срупулезно.</b>
-                  <p>Математически выверенный дизайн
+                  <b>Долго, дорого, скрупулезно.</b>
+                  <p>Математически выверенный дизайн<br>
                      для вашего сайта или мобильного приложения.</p>
                   <a class="btn" href="#">Узнать больше</a>
-                </div>
-                <div class="slider-controls">
-                  <label for="btn-1"></label>
-                  <label for="btn-2"></label>
-                  <label for="btn-3"></label>
                 </div>
               </div>
               <div class="slides slide-2">
                 <div class="slide-description">
                   <b>Любим математику как никто другой</b>
-                  <p>Никакого креатива, только математические формулы
+                  <p>Никакого креатива, только математические формулы<br>
                      для расчета идеальных пропорций</p>
                   <a class="btn" href="#">Узнать больше</a>
-                </div>
-                <div class="slider-controls">
-                  <label for="btn-1"></label>
-                  <label for="btn-2"></label>
-                  <label for="btn-3"></label>
                 </div>
               </div>
               <div class="slides slide-3">
                 <div class="slide-description">
                   <b>Только ночь, только хардкор</b>
-                  <p>Работать днем, как все? Мы против этого.
+                  <p>Работать днем, как все? Мы против этого.<br>
                      Ближе к полуночи работа только начинается.</p>
                   <a class="btn" href="#">Узнать больше</a>
-                </div>
-                <div class="slider-controls">
-                  <label for="btn-1"></label>
-                  <label for="btn-2"></label>
-                  <label for="btn-3"></label>
                 </div>
               </div>
             </div>
@@ -80,44 +71,44 @@
         <div class="feature feature-1">
           <img alt="Веб-сайты" src="img/illustration-1.jpg" width="300" height="146">
           <h3>Веб-сайты</h3>
-            Мир никогда не будет прежним
-            после того как увидит ваш сайт!
+            <p>Мир никогда не будет прежним
+               после того как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="feature feature-2">
           <img alt="Приложения" src="img/illustration-2.jpg" width="300" height="146">
           <h3>Приложения</h3>
-            Покорите топ-10 приложений в
-            AppStore и Google Play
+            <p>Покорите топ-10 приложений в
+               AppStore и Google Play</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="feature feature-3">
           <img alt="Презентации" src="img/illustration-3.jpg" width="300" height="146">
           <h3>Презентации</h3>
-            Вы даже не подозреваете,
-            насколько вы изумительны!
+            <p>Вы даже не подозреваете,
+               насколько вы изумительны!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
       </div>
       <div class="main-about container clearfix">
         <div class="main-about-left">
-          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b>
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                превыше креатива. Работаем не покладая рук, как роботы.
             </p>
-          <b>Выполняем заказы на разработку:</b>
+          <span>Выполняем заказы на разработку:</span>
           <ul>
             <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для OS и Android</li>
+            <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="main-about-right">
           <img alt="Nerds logo" src="img/nerds-illustration.png" width="360" height="208">
           <b>С 2004 года любим точность во всем:</b>
-          <p><span class="percent">146%</span> Уровень самоотдачи</p>
-          <p><span class="percent">100%</span> Соблюдение сроков</p>
-          <p><span class="percent">50%</span> Минимальная предоплата</p>
+          <p><span class="percent">146<span class="sup">%</span></span>Уровень самоотдачи</p>
+          <p><span class="percent">100<span class="sup">%</span></span>Соблюдение сроков</p>
+          <p><span class="percent">50<span class="sup">%</span></span>Минимальная предоплата</p>
         </div>
       </div>
       <div class="portfolio container clearfix">
@@ -125,7 +116,7 @@
           <img alt="HTML academy" src="img/logo-1.png" width="199" height="68">
         </a>
         <a class="btn-borodinski" href="#">
-          <img alt="Barbershop Borodinski" src="img/logo-2.png" width="209" height="87">
+          <img alt="Barbershop Borodinski" src="img/logo-2.png" width="209" height="90">
         </a>
         <a class="btn-pink" href="#">
           <img alt="Pink" src="img/logo-3.png" width="185" height="52">
@@ -138,12 +129,12 @@
     <footer class="main-footer">
       <div class="map">
         <div class="container clearfix">
-          <div class="container address">
+          <div class="address">
             <h4>Nёrds design studio</h4>
             <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8<br>
                <br>
-               тел. +7(812) 275-75-75
+               тел. +7 (812) 275-75-75
             </p>
             <a class="btn" href="#">Напишите нам</a>
           </div>
@@ -156,8 +147,8 @@
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
         <div class="friendship">
-          <span class="social-header">Давайте дружить, это выгодно!</span>
-            Скидка 10% для друзей из социальных сетей
+          <b class="social-header">Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
         <form class="hidden-form" action="/echo" method="post">
           <b>Напишите нам</b>
