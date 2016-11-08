@@ -22,7 +22,7 @@
           </ul>
         </nav>
         <div class="basket">
-          <a class="basket" href="#">Корзина</a>
+          <a href="#">Корзина</a>
         </div>
       </div>
       <div class="leader container clearfix">
@@ -61,100 +61,102 @@
           <button class="btn" type="submit">Показать</button>
         </form>
       </div>
-      <div class="main-filter">
+      <div class="main-filter clearfix">
+        <span>Сортировать:</span>
+        <div class="arrows">
+          <a class="arrows down-arrow" href="#">Вверх</a>
+          <a class="arrows up-arrow srt-active" href="#">Вниз</a>
+        </div>
         <ul>
-          <li><span>Сортировать:</span></li>
-          <li><a class="sort-btn" href="#">По цене</a></li>
+          <li><a class="sort-btn srt-active" href="#">По цене</a></li>
           <li><a class="sort-btn" href="#">По типу</a></li>
           <li><a class="sort-btn" href="#">По названию</a></li>
-          <li><a class="sort-btn" href="#">Вниз</a></li>
-          <li><a class="sort-btn" href="#">Вверх</a></li>
         </ul>
       </div>
-      <div class="cards clearfix">
+      <div class="shop-cards clearfix">
         <article class="sedona">
-          <div class="cards-controls">
+          <!-- <div class="cards-controls">
             <label></label>
             <label></label>
             <label></label>
-          </div>
+          </div> -->
           <img alt="Sedona" src="img/img-sedona.jpg" width="360" height="576">
           <div class="price-box">
-            <h3><a href="#">Sedona</a></h3>
-            Информационный сайт для туристов
+            <a href="#">Sedona</a>
+            <p>Информационный сайт для туристов</p>
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="pink">
-          <div class="cards-controls">
+          <!-- <div class="cards-controls">
             <label></label>
             <label></label>
             <label></label>
-          </div>
+          </div> -->
           <a class="main-img" href="#"><img alt="Мобильные приложения PINK" src="img/img-pink.jpg" width="360" height="576"></a>
           <div class="price-box">
-            <h3><a href="#">Pink App</a></h3>
-            Продуктовый лендинг приложения для IOS и Android
+            <a href="#">Pink App</a>
+            <p>Продуктовый лендинг приложения для IOS и Android</p>
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="borodinsky">
-          <div class="cards-controls">
+          <!-- <div class="cards-controls">
             <label></label>
             <label></label>
             <label></label>
-          </div>
+          </div> -->
           <a class="main-img" href="#"><img alt="Барбершоп Бородинки" src="img/img-barbershop.jpg" width="360" height="576"></a>
           <div class="price-box">
-            <h3><a href="#">Barbershop</a></h3>
-            Сайт солона кросоты. Для мужчин, да.
+            <a href="#">Barbershop</a>
+            <p>Сайт солона кросоты. Для мужчин, да.</p>
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="mishka">
-          <div class="cards-controls">
+          <!-- <div class="cards-controls">
             <label></label>
             <label></label>
             <label></label>
-          </div>
+          </div> -->
           <a class="main-img" href="#"><img alt="Интернет-магазин MISHKA" src="img/img-mishka.jpg" width="360" height="576"></a>
           <div class="price-box">
-            <h3><a href="#">Mishka</a></h3>
-            Интернет-магазин вязальных игрушек
+            <a href="#">Mishka</a>
+            <p>Интернет-магазин вязальных игрушек</p>
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="a-plus">
-          <div class="cards-controls">
+          <!-- <div class="cards-controls">
             <label></label>
             <label></label>
             <label></label>
-          </div>
+          </div> -->
           <a class="main-img" href="#"><img alt="A plus" src="img/img-aplus.jpg" width="360" height="576"></a>
           <div class="price-box">
-            <h3><a href="#">A plus</a></h3>
-            Лендинг курсов повышения квалификации
+            <a href="#">A plus</a>
+            <p>Лендинг курсов повышения квалификации</p>
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </article>
         <article class="kvast">
-          <div class="cards-controls">
+          <!-- <div class="cards-controls">
             <label></label>
             <label></label>
             <label></label>
-          </div>
+          </div> -->
           <a class="main-img" href="#"><img alt="Самый крафтовый квас" src="img/img-kvast.jpg" width="360" height="576"></a>
           <div class="price-box">
-            <h3><a href="#">Кваст</a></h3>
-            Промо-сайт производителя крафтового кваса
+            <a href="#">Кваст</a>
+            <p>Промо-сайт производителя крафтового кваса</p>
             <a class="btn" href="#">9 900 руб.</a>
           </div>
         </article>
-        <div class="pages-of-shop">
-          <a class="btn">1</a>
+        <div class="pgns">
+          <a class="btn pgns-active">1</a>
           <a class="btn" href="#">2</a>
           <a class="btn" href="#">3</a>
-          <a class="btn" href="#">Слейдущая</a>
+          <a class="btn" href="#">Следующая</a>
         </div>
       </div>
     </div>
@@ -162,12 +164,12 @@
     <footer class="catalog-footer">
       <div class="map">
         <div class="container clearfix">
-          <div class="container address">
+          <div class="address">
             <h4>Nёrds design studio</h4>
             <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8<br>
                <br>
-               тел. +7(812) 275-75-75
+               тел. +7 (812) 275-75-75
             </p>
             <a class="btn" href="#">Напишите нам</a>
           </div>
@@ -180,8 +182,8 @@
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
         <div class="friendship">
-          <span class="social-header">Давайте дружить, это выгодно!</span>
-            Скидка 10% для друзей из социальных сетей
+          <b class="social-header">Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
         <form class="hidden-form" action="/echo" method="post">
           <b>Напишите нам</b>
