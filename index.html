@@ -139,6 +139,19 @@
             <a class="btn" href="#">Напишите нам</a>
           </div>
         </div>
+        <div class="hidden-form">
+          <b>Напишите нам</b>
+          <button class="hidden-form-close" type="button">X</button>
+          <form action="/echo" method="post">
+            <label for="name-field">Ваше имя:</label>
+            <label for="mail-field">Ваш e-mail:</label>
+            <input class="your-name" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+            <input class="your-mail" type="text" name="mail" id="mail-field" placeholder="Для отправки ответа">
+            <label for="comment-field">Текст письма</label>
+            <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+          </form>
+          <button class="btn" type="button">Отправить</button>
+        </div>
       </div>
       <div class="container clearfix">
         <div class="social">
@@ -150,16 +163,6 @@
           <b class="social-header">Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </div>
-        <form class="hidden-form" action="/echo" method="post">
-          <b>Напишите нам</b>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
-          <label for="mail-field">Ваш e-mail:</label>
-          <input type="text" name="mail" id="mail-field" placeholder="Для отправки ответа">
-          <label for="comment-field">Текст письма</label>
-          <textarea name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
-          <button type="button" class="close">X</button>
-        </form>
       </div>
     </footer>
   </body>
