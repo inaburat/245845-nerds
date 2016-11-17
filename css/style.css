@@ -48,6 +48,7 @@ a {
 
 .nerds-logo {
   float: left;
+  width: 161px;
   margin-right: 120px;
   height: 65px;
 }
@@ -66,8 +67,8 @@ a {
 }
 
 .main-menu {
-  width: 560px;
   float: left;
+  width: 560px;
 }
 
 .main-menu ul {
@@ -119,8 +120,8 @@ a {
 
 .basket {
   position: relative;
-  min-width: 180px;
   float: right;
+  min-width: 180px;
 }
 
 .basket a {
@@ -136,7 +137,7 @@ a {
   position: absolute;
   width: 18px;
   height: 18px;
-  background: url("../img/cart-icon.png") no-repeat center;
+  background: transparent url("../img/cart-icon.png") no-repeat center;
   top: 5px;
   left: 1px;
 }
@@ -181,9 +182,9 @@ a {
 }
 
 .slides {
+  float: left;
   width: 1160px;
   min-height: 431px;
-  float: left;
   margin-right: 40px;
   background-color: #eeeeee;
   background-repeat: no-repeat;
@@ -203,8 +204,8 @@ a {
 }
 
 .slide-description {
-  width: 520px;
   float: left;
+  width: 520px;
 }
 
 .slide-description b {
@@ -233,8 +234,8 @@ a {
 
 .slider .btn {
   float: left;
-  clear: both;
-  padding: 12px 54px 10px 52px;
+  width: 133px;
+  padding: 12px 54px 10px 51px;
 }
 
 .slider .btn:hover {
@@ -333,13 +334,14 @@ a {
 .feature .btn{
   display: block;
   float: left;
-  clear: both;
+  width: 81px;
   padding: 12px 39px 10px 38px;
 
 }
 
 .feature-1 {
   float: left;
+  width: 300px;
   margin-right: 100px;
 }
 
@@ -358,6 +360,7 @@ a {
 
 .feature-2 {
   float: left;
+  width: 300px;
   margin-right: 100px;
 }
 
@@ -381,6 +384,7 @@ a {
 
 .feature-3 {
   float: left;
+  width: 300px;
 }
 
 .feature-3 .btn {
@@ -402,13 +406,23 @@ a {
 }
 
 .main-about {
+  position: relative;
   margin-bottom: 30px;
   border-top: 1px solid #ffffff;
 }
 
+.main-about::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
 .main-about-left {
-  width: 660px;
   float: left;
+  width: 660px;
   padding-top: 73px;
 }
 
@@ -458,8 +472,8 @@ a {
 
 
 .main-about-right {
-  width: 360px;
   float: right;
+  width: 360px;
   margin-top: 39px;
   margin-right: 40px;
 }
@@ -498,25 +512,46 @@ a {
 }
 
 .main-about-right p {
+  float: left;
   width: 100px;
   display: block;
-  float: left;
+}
+
+.portfolio {
+  position: relative;
+}
+
+.portfolio::before,
+.portfolio::after {
+  content: "";
+  position: absolute;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.portfolio::before {
+  top: -3px;
+}
+
+.portfolio::after {
+  bottom: -46px;
 }
 
 .portfolio a {
+  position: relative;
   width: 260px;
   margin-top: 45px;
   margin-right: 36px;
   display: inline-block;
   vertical-align: middle;
-  opacity: 0.2;
 }
 
-.portfolio a:hover {
+.portfolio a:hover img {
   opacity: 1;
 }
 
-.portfolio a:active {
+.portfolio a:active img{
   opacity: 0.1;
 }
 
@@ -527,6 +562,25 @@ a {
 .portfolio a img {
   display: inline-block;
   vertical-align: middle;
+  opacity: 0.2;
+}
+
+.portfolio a::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  top: 17px;
+  left: -20px;
+  background-color: #eeeeee;
+}
+
+.portfolio a.btn-academy::before {
+  display: none;
+}
+
+.portfolio a.btn-pink::before {
+  top: -1px;
 }
 
 .btn-academy img {
@@ -558,13 +612,14 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 74px;
-  background-image: url("../img/map-marker.jpg");
+  background: #ffffff url("../img/map-marker.jpg");
   background-repeat: no-repeat;
 }
 
 .address {
-  margin-top: 54px;
   float: left;
+  width: 220px;
+  margin-top: 54px;
   background-color: #ffffff;
   padding-top: 18px;
   padding-left: 50px;
@@ -573,20 +628,21 @@ a {
 }
 
 .address h4 {
+  margin-top: 30px;
+  margin-bottom: 23px;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 30px;
 }
 
 .address p {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: 2px;
   color: #666666;
   font-size: 16px;
   line-height: 18px;
-  display: block;
-  margin-bottom: 40px;
-
 }
 
 .address .btn {
@@ -613,15 +669,15 @@ a {
 }
 
 .social {
-  width: 260px;
   float: left;
+  width: 260px;
   min-height: 80px;
 }
 
 .friendship {
+  float: right;
   width: 600px;
   margin-right: 200px;
-  float: right;
 }
 
 .friendship b {
@@ -640,8 +696,8 @@ a {
 }
 
 .social {
-  min-width: 300px;
   float: left;
+  min-width: 300px;
   margin-top: -5px;
 }
 
@@ -725,9 +781,9 @@ a {
 }
 
 .action-form {
+  float: left;
   width: 260px;
   margin-top: -3px;
-  float: left;
   margin-right: 140px;
 }
 
@@ -1001,24 +1057,24 @@ input:checked ~ label:hover::before {
 }
 
 .main-filter {
-  width: 800px;
   float: right;
+  width: 800px;
   margin-bottom: 48px;
 }
 
 .main-filter span {
+  float: left;
+  min-width: 160px;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  min-width: 160px;
-  float: left;
 }
 
 .main-filter ul{
-  min-width: 269px;
   float: right;
+  min-width: 269px;
   padding: 0;
   margin: 0;
 }
@@ -1051,8 +1107,8 @@ input:checked ~ label:hover::before {
 }
 
 .arrows {
-  width: 87px;
   float: right;
+  width: 87px;
 }
 
 .arrows a {
@@ -1085,14 +1141,15 @@ a.srt-active {
 }
 
 .shop-cards {
-  width: 800px;
   float: right;
+  width: 800px;
 }
 
 article {
   position: relative;
-  width: 360px;
   display: inline-block;
+  vertical-align: top;
+  width: 360px;
   font-size: 0;
   margin-right: 37px;
   margin-bottom: 24px;
@@ -1302,12 +1359,14 @@ article:hover .price-box {
   font-weight: 500;
   display: block;
   margin-left: -1px;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
 }
 
 .hidden-form label {
   display: inline-block;
+  vertical-align: top;
   margin-right: 317px;
+  margin-bottom: 9px;
   font-style: 16px;
   line-height: 18px;
   font-weight: bold;
@@ -1323,10 +1382,10 @@ article:hover .price-box {
 
 .hidden-form input[type="text"] {
   display: inline-block;
+  vertical-align: top;
   width: 331px;
-  margin-top: 6px;
   margin-right: 34px;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
   padding: 14px 13px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -1373,11 +1432,11 @@ article:hover .price-box {
 }
 
 .hidden-form form {
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 }
 
 .hidden-form .btn {
-  padding: 17px 84px 15px 82px;
+  padding: 16px 84px 14px 82px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 18px;
