@@ -415,6 +415,7 @@ a {
   content: "";
   position: absolute;
   top: -3px;
+  left: 20px;
   width: 1160px;
   height: 2px;
   background-color: #eeeeee;
@@ -525,6 +526,7 @@ a {
 .portfolio::after {
   content: "";
   position: absolute;
+  left: 20px;
   width: 1160px;
   height: 2px;
   background-color: #eeeeee;
