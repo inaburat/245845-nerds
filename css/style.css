@@ -609,8 +609,9 @@ a {
 
 .map {
   position: relative;
+  z-index: 10;
   width: 1440px;
-  min-height: 416px;
+  height: 416px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 74px;
@@ -619,9 +620,12 @@ a {
 }
 
 .address {
-  float: left;
+  position: absolute;
+  z-index: 20;
   width: 220px;
-  margin-top: 54px;
+  top: 54px;
+  left: 50%;
+  margin-left: -600px;
   background-color: #ffffff;
   padding-top: 18px;
   padding-left: 50px;
@@ -1299,6 +1303,7 @@ article:hover .price-box {
 .hidden-form{
   display: none;
   position: absolute;
+  z-index: 30;
   width: 760px;
   min-height: 456px;
   left: 50%;
@@ -1306,7 +1311,26 @@ article:hover .price-box {
   padding: 67px 100px;
   margin-left: -500px;
   background-color: #ffffff;
+  color: #000000;
   box-shadow: 0 20px 70px -9px #000101;
+}
+
+@keyframes processing {
+  from {opacity: 0.1}
+  20% {opacity: 0.2}
+  30% {opacity: 0.3}
+  40% {opacity: 0.4}
+  50% {opacity: 0.5}
+  60% {opacity: 0.6}
+  70% {opacity: 0.7}
+  80% {opacity: 0.8}
+  90% {opacity: 0.9}
+  to {opacity: 1}
+}
+
+.hidden-form-show {
+  display: block;
+  animation: processing 0.3s;
 }
 
 .hidden-form-close {
@@ -1415,6 +1439,7 @@ article:hover .price-box {
   padding: 11px 13px;
   width: 730px;
   min-height: 92px;
+  margin-bottom: 47px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -1431,10 +1456,6 @@ article:hover .price-box {
 .hidden-form textarea:focus {
   outline: none;
   border-color: #000000;
-}
-
-.hidden-form form {
-  margin-bottom: 47px;
 }
 
 .hidden-form .btn {
