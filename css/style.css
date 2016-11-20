@@ -1214,10 +1214,10 @@ article:hover .price-box {
 .price-box {
   display: none;
   position: absolute;
-  bottom: 13px;
+  bottom: 0;
   left: 0;
   width: 240px;
-  padding: 27px 60px 49px 60px;
+  padding: 27px 60px 50px 60px;
   text-align: center;
   background-color: #eeeeee;
 }
