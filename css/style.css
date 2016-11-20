@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -26,7 +26,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
@@ -114,14 +114,19 @@ a {
   left: 0;
 }
 
-.active-menu:hover::after {
-  display: none;
+.active-menu a:hover {
+  color: #000000;
+  cursor: default;
+}
+
+.active-menu a:active {
+  opacity: 1;
 }
 
 .basket {
   position: relative;
   float: right;
-  min-width: 180px;
+  min-width: 139px;
 }
 
 .basket a {
@@ -139,7 +144,7 @@ a {
   height: 18px;
   background: transparent url("../img/cart-icon.png") no-repeat center;
   top: 5px;
-  left: 1px;
+  left: -1px;
 }
 
 .basket a:hover {
@@ -178,7 +183,7 @@ a {
 }
 
 .slider-slides {
-  width: 300%;
+  width: 311%;
 }
 
 .slides {
@@ -220,7 +225,7 @@ a {
 
 .slide-description p {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .btn {
@@ -235,7 +240,7 @@ a {
 .slider .btn {
   float: left;
   width: 133px;
-  padding: 12px 54px 10px 51px;
+  padding: 13px 52px 11px 53px;
 }
 
 .slider .btn:hover {
@@ -254,8 +259,8 @@ a {
 .slider-controls {
   width: 104px;
   position: absolute;
-  right: 567px;
-  bottom: 93px;
+  right: 528px;
+  bottom: 94px;
   z-index: 10;
 }
 
@@ -476,25 +481,25 @@ a {
   float: right;
   width: 360px;
   margin-top: 39px;
-  margin-right: 40px;
 }
 
 .main-about-right b {
+  display: block;
+  padding-top: 29px;
+  margin-bottom: 16px;
+  margin-left: 3px;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  display: block;
-  padding-top: 29px;
-  margin-bottom: 16px;
 }
 
 .main-about-right p {
   font-size: 16px;
   line-height: 18px;
-  margin-right: 20px;
+  margin-right: 19px;
 }
 
 .main-about-right .percent {
@@ -610,7 +615,7 @@ a {
 .map {
   position: relative;
   z-index: 10;
-  width: 1440px;
+  min-width: 1200px;
   height: 416px;
   margin-left: auto;
   margin-right: auto;
@@ -625,7 +630,7 @@ a {
   width: 220px;
   top: 54px;
   left: 50%;
-  margin-left: -600px;
+  margin-left: -580px;
   background-color: #ffffff;
   padding-top: 18px;
   padding-left: 50px;
@@ -644,19 +649,24 @@ a {
 
 .address p {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   margin-left: 2px;
   color: #666666;
   font-size: 16px;
   line-height: 18px;
 }
 
+.address span {
+  margin-left: 2px;
+  color: #666666;
+}
+
 .address .btn {
   display: block;
   float: left;
-  margin-top: -2px;
+  margin-top: 34px;
   padding-left: 44px;
-  padding-top: 11px;
+  padding-top: 13px;
   padding-bottom: 11px;
   padding-right: 43px;
 }
@@ -683,7 +693,7 @@ a {
 .friendship {
   float: right;
   width: 600px;
-  margin-right: 200px;
+  margin-right: 160px;
 }
 
 .friendship b {
@@ -782,7 +792,6 @@ a {
 }
 
 .leader h1 {
-  padding-right: 43px;
   margin-bottom: 108px;
 }
 
@@ -1034,7 +1043,7 @@ input:checked ~ label:hover::before {
 
 .action-form .btn {
   padding: 16px 87px 14px 88px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1064,7 +1073,7 @@ input:checked ~ label:hover::before {
 
 .main-filter {
   float: right;
-  width: 800px;
+  width: 760px;
   margin-bottom: 48px;
 }
 
@@ -1114,7 +1123,7 @@ input:checked ~ label:hover::before {
 
 .arrows {
   float: right;
-  width: 87px;
+  width: 47px;
 }
 
 .arrows a {
@@ -1127,7 +1136,7 @@ input:checked ~ label:hover::before {
 }
 
 .arrows a:first-child {
-  margin-right: 36px;
+  margin-right: -4px;
 }
 
 .arrows a:last-child {
@@ -1148,29 +1157,39 @@ a.srt-active {
 
 .shop-cards {
   float: right;
-  width: 800px;
+  width: 760px;
 }
 
 article {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  padding: 0;
+  margin: 0;
   width: 360px;
   font-size: 0;
-  margin-right: 37px;
-  margin-bottom: 24px;
+  margin-right: 36px;
+  margin-bottom: 36px;
   padding-top: 40px;
   z-index: 10;
+}
+
+article img {
+  display: block;
 }
 
 article:nth-child(2n) {
   margin-right: 0;
 }
 
-/*Немного подзабыл, как выбрать именно 2 последних элемента*/
-article:nth-child(5),
-article:nth-child(6) {
-  margin-bottom: 50px;
+article:nth-child(3),
+article:nth-child(4) {
+  margin-bottom: 39px;
+}
+
+article:nth-last-child(1),
+article:nth-last-child(2) {
+  margin-bottom: 61px;
 }
 
 article::before {
@@ -1259,7 +1278,7 @@ article:hover .price-box {
 }
 
 .pgns a.btn:last-child {
-  padding: 13px 75px 13px 78px;
+  padding: 13px 74px 13px 75px;
   margin-right: 0;
 }
 
@@ -1278,6 +1297,7 @@ article:hover .price-box {
 .pgns a.pgns-active {
   border: 3px solid #dbdbdb;
   background-color: #ffffff;
+  cursor: default;
 }
 
 .pgns a.pgns-active:hover {
@@ -1286,12 +1306,13 @@ article:hover .price-box {
 }
 
 .pgns a.pgns-active:active {
+  color: rgba(0, 0, 0, 1);
   border: 3px solid #dbdbdb;
   background-color: #ffffff;
 }
 
 .catalog-footer {
-  margin-top: 61px;
+  margin-top: 60px;
 }
 
 .clearfix::after {
@@ -1413,7 +1434,7 @@ article:hover .price-box {
   margin-right: 34px;
   margin-bottom: 34px;
   padding: 14px 13px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -1440,7 +1461,7 @@ article:hover .price-box {
   width: 730px;
   min-height: 92px;
   margin-bottom: 47px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -1460,7 +1481,7 @@ article:hover .price-box {
 
 .hidden-form .btn {
   padding: 16px 84px 14px 82px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
@@ -1484,4 +1505,5 @@ article:hover .price-box {
 .hidden-form .btn:focus{
   outline: none;
 }
+
 /** {outline: 1px solid green;}*/
