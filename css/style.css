@@ -183,7 +183,7 @@ a {
 }
 
 .slider-slides {
-  width: 311%;
+  width: 3600px;
 }
 
 .slides {
@@ -620,7 +620,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 74px;
-  background: #ffffff url("../img/map-marker.jpg");
+  background: #ffffff url("../img/map-marker.jpg") no-repeat center center;
   background-repeat: no-repeat;
 }
 
@@ -1330,7 +1330,7 @@ article:hover .price-box {
   left: 50%;
   bottom: -36px;
   padding: 67px 100px;
-  margin-left: -500px;
+  margin-left: -480px;
   background-color: #ffffff;
   color: #000000;
   box-shadow: 0 20px 70px -9px #000101;
@@ -1414,7 +1414,7 @@ article:hover .price-box {
   vertical-align: top;
   margin-right: 317px;
   margin-bottom: 9px;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 18px;
   font-weight: bold;
 }
