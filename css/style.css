@@ -144,11 +144,14 @@ header {
 .basket a::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
-  background: transparent url("../img/cart-icon.png") no-repeat center;
   top: 5px;
   left: -1px;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  background-image: url("../img/sprite.png");
+  background-position: 3px -36px;
+  background-repeat: no-repeat;
 }
 
 .basket a:hover {
@@ -298,7 +301,8 @@ header {
   display: none;
 }
 
-/*Критерий рассматривает именно запрет на стилизацию через id,
+/*Д6. Для стилизации не использованы
+Критерий рассматривает именно запрет на стилизацию через id,
 но использовать этот атрибут для связывания label и элементов форм не считается ошибкой.
 Также не считается ошибкой использование этого атрибута для реализации функциональности, например, в слайдере.*/
 
@@ -697,12 +701,6 @@ header {
   box-shadow: inset 0 4px 0 -1px #c13135;
 }
 
-.social {
-  float: left;
-  width: 260px;
-  min-height: 80px;
-}
-
 .friendship {
   float: right;
   width: 600px;
@@ -727,7 +725,7 @@ header {
 .social {
   float: left;
   min-width: 300px;
-  margin-top: -5px;
+  margin-top: -6px;
 }
 
 .social-btn {
@@ -740,8 +738,8 @@ header {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .social-btn:first-child{
@@ -753,27 +751,28 @@ header {
 }
 
 .social-btn-vk {
-  background-image: url("../img/vk-icon.png");
+  background-position: 0 -378px;
 }
 
 .social-btn-vk:active {
-  background-image: url("../img/vk-icon-opacity.png")
+  background-position: 0px -445px;
 }
 
 .social-btn-fb {
-  background-image: url("../img/fb-icon.png");
+  background-position: 2px -88px;
+
 }
 
 .social-btn-fb:active {
-  background-image: url("../img/fb-icon-opacity.png");
+  background-position: 1px -162px;
 }
 
 .social-btn-inst {
-  background-image: url("../img/insta-icon.png");
+  background-position: -2px -235px;
 }
 
 .social-btn-inst:active {
-  background-image: url("../img/insta-icon-opacity.png");
+  background-position: -2px -308px;
 }
 
 .social-btn:hover {
@@ -797,7 +796,6 @@ header {
 }
 
 .catalog-header .nerds-logo {
-  background-color: ##eeeeee;
   margin-bottom: 41px;
 }
 
@@ -1199,11 +1197,17 @@ input[type=checkbox]:disabled ~ .nerds-checkbox:hover .checkbox-indicator::befor
 }
 
 .down-arrow {
-  background: url("../img/icon-down.png") no-repeat center;
+  background: transparent;
+  background-image: url("../img/sprite.png");
+  background-position: 6px 6px;
+  background-repeat: no-repeat;
 }
 
 .up-arrow {
-  background: url("../img/icon-up.png") no-repeat center;
+  background: transparent;
+  background-image: url("../img/sprite.png");
+  background-position: 6px -13px;
+  background-repeat: no-repeat;
 }
 
 a.srt-active {
