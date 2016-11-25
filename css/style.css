@@ -301,26 +301,21 @@ header {
   display: none;
 }
 
-/*Д6. Для стилизации не использованы
-Критерий рассматривает именно запрет на стилизацию через id,
-но использовать этот атрибут для связывания label и элементов форм не считается ошибкой.
-Также не считается ошибкой использование этого атрибута для реализации функциональности, например, в слайдере.*/
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"]::after,
-#btn-2:checked ~ .slider-controls label[for="btn-2"]::after,
-#btn-3:checked ~ .slider-controls label[for="btn-3"]::after {
+.btn-one:checked ~ .slider-controls label[for="btn-1"]::after,
+.btn-two:checked ~ .slider-controls label[for="btn-2"]::after,
+.btn-three:checked ~ .slider-controls label[for="btn-3"]::after {
   display: block;
 }
 
-#btn-1:checked ~ .slider-inner .slider-slides {
+.btn-one:checked ~ .slider-inner .slider-slides {
     transform: translate(0);
 }
 
-#btn-2:checked ~ .slider-inner .slider-slides {
+.btn-two:checked ~ .slider-inner .slider-slides {
     transform: translate(-1200px);
 }
 
-#btn-3:checked ~ .slider-inner .slider-slides {
+.btn-three:checked ~ .slider-inner .slider-slides {
     transform: translate(-2400px);
 }
 
@@ -1380,19 +1375,26 @@ article:hover .price-box {
   clear: both;
 }
 
+.modal-content {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
 .hidden-form{
-  display: none;
-  position: absolute;
+  display: block;
+  position: relative;
   z-index: 30;
   width: 760px;
   min-height: 456px;
-  left: 50%;
-  bottom: -36px;
   padding: 67px 100px;
-  margin-left: -480px;
   background-color: #ffffff;
   color: #000000;
   box-shadow: 0 20px 70px -9px #000101;
+}
+
+.hide-form {
+  display: none;
 }
 
 @keyframes processing {
@@ -1410,10 +1412,15 @@ article:hover .price-box {
 
 .hidden-form-show {
   display: block;
+  position: absolute;
   animation: processing 0.3s;
+  left: 50%;
+  margin-left: -480px;
+  bottom: 181px;
 }
 
 .hidden-form-close {
+  display: none;
   position: absolute;
   float: right;
   top: 77px;
@@ -1425,6 +1432,10 @@ article:hover .price-box {
   border: 0;
   cursor: pointer;
   opacity: 0.3;
+}
+
+.hidden-form-close-show {
+  display: block;
 }
 
 .hidden-form-close:hover {
@@ -1542,6 +1553,7 @@ article:hover .price-box {
   padding: 16px 84px 14px 82px;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
   font-weight: normal;
   color: #ffffff;

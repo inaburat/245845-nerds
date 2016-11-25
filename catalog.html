@@ -30,7 +30,7 @@
     <main>
     <div class="container clearfix">
       <div class="action-form">
-        <form action="/echo" method="post">
+        <form action="#" method="post">
           <fieldset class="range-filter">
             <legend>Стоимость:</legend>
             <div class="range-controls">
@@ -183,20 +183,7 @@
           <p>191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д. 19/8</p>
           <span>тел. +7 (812) 275-75-75</span>
-          <a class="btn js-hidden-form" href="#">Напишите нам</a>
-        </div>
-        <div class="hidden-form">
-          <b>Напишите нам</b>
-          <button class="hidden-form-close" type="button">X</button>
-          <form action="/echo" method="post">
-            <label for="name-field">Ваше имя:</label>
-            <label for="mail-field">Ваш e-mail:</label>
-            <input class="your-name" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" required>
-            <input class="your-mail" type="text" name="mail" id="mail-field" placeholder="Для отправки ответа" required>
-            <label for="comment-field">Текст письма:</label>
-            <textarea name="comment" id="comment-field" placeholder="В свободной форме" required></textarea>
-            <button class="btn" type="submit">Отправить</button>
-          </form>
+          <a class="btn js-hidden-form" href="feedback.html">Напишите нам</a>
         </div>
       </div>
       <div class="container clearfix">
@@ -211,6 +198,21 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <div class="hidden-form">
+        <b>Напишите нам</b>
+        <button class="hidden-form-close" type="button">X</button>
+        <form action="#" method="post">
+          <label for="name-field">Ваше имя:</label>
+          <label for="mail-field">Ваш e-mail:</label>
+          <input class="your-name" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" required>
+          <input class="your-mail" type="text" name="mail" id="mail-field" placeholder="Для отправки ответа" required>
+          <label for="comment-field">Текст письма:</label>
+          <textarea name="comment" id="comment-field" placeholder="В свободной форме" required></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>
