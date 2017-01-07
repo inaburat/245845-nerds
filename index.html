@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -127,15 +127,14 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5833949968173!2d30.320722954518185!3d59.93905483636798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1479521584817" height="416" style="border:0" allowfullscreen></iframe>
-        <div class="address">
-          <h4>Nёrds design studio</h4>
-          <p>191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д. 19/8</p>
-          <span>тел. +7 (812) 275-75-75</span>
-          <a class="btn js-hidden-form" href="feedback.html">Напишите нам</a>
-        </div>
+      <div class="map" id="map">
+      </div>
+      <div class="address">
+        <h4>Nёrds design studio</h4>
+        <p>191186, Санкт-Петербург,<br>
+           ул. Б. Конюшенная, д. 19/8</p>
+        <span>тел. +7 (812) 275-75-75</span>
+        <a class="btn js-hidden-form" href="feedback.html">Напишите нам</a>
       </div>
       <div class="container clearfix">
         <div class="social">
@@ -165,5 +164,9 @@
       </div>
     </div>
     <script src="js/script.min.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_chp6byeBhusRhrwBGmot1KLjSnqnAYw&callback=initMap">
+    </script>
   </body>
 </html>

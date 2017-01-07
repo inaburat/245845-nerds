@@ -616,6 +616,7 @@ header {
 }
 
 .main-footer {
+  position: relative;
   margin-top: 127px;
 }
 
@@ -629,10 +630,6 @@ header {
   margin-bottom: 74px;
   background: #ffffff url("../img/map-marker.jpg") no-repeat center center;
   background-repeat: no-repeat;
-}
-
-.map iframe {
-  width: 100%;
 }
 
 .address {
@@ -1366,6 +1363,7 @@ article:hover .price-box {
 }
 
 .catalog-footer {
+  position: relative;
   margin-top: 60px;
 }
 
